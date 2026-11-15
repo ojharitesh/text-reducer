@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "text-reducer"
+version = "0.1.0"
+description = "A small educational delta-debugging text reducer"
+requires-python = ">=3.9"
+
+[project.scripts]
+text-reducer = "text_reducer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["text_reducer*"]
